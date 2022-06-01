@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="tr">
+<!-- title-->
+<title>My One Page</title>
+<!-- favicon -->
+<link rel="icon" href="picture/favicon.jpg" />
+
+<!-- Turkce karakter -->
+<meta charset="utf-8" />
+
+<!-- responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- seo -->
+<meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,es5,es6" />
+<meta name="description" content="one pages, html5,css3,js,jquery,bootstrap,seo" />
+<meta name="author" content="Hamit Mızrak" />
+
+<!-- Google Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Quicksand:wght@300&display=swap"
+    rel="stylesheet">
+
+<!-- Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+<!-- Bootstrap CSS v5.0.2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style2.css">
+
+<!-- External JS -->
+<script src="template.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- navbar start -->
+       <!-- Navbar start -->
+       <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark">
+        <!-- Container wrapper -->
+        <div class="container" id="navbar-example">
+            <!-- Navbar brand -->
+            <div id="logo_div">
+            <a class="navbar-brand me-2" href="#" >
+                <img  src="//d9hhrg4mnvzow.cloudfront.net/www.techcareer.net/mainpage/en/57e21290-techcareer-logo-web_104600g000000000000028.png"
+                    height="16" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+            </a>
+        </div>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id"
+                aria-controls="navbar_id" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbar_id">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="#special_aboutme">  <i class="fa-solid fa-desktop"></i>About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special_ability">Ability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special_contact">Contact</a>
+                    </li>
+
+                </ul>
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center">
+                    <button data-bs-toggle="modal" data-bs-target="#modelId" type="button"
+                        class="btn btn-link px-3 me-2">
+                        <i class="fa-solid fa-user-large" style="color:#ffca04"></i>
+                    </button>
+                    <button data-bs-toggle="modal" data-bs-target="#registerId" type="button"
+                        class="btn btn-primary btn-sm me-3">
+                        Register
+                    </button>
+                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Button trigger modal -->
+  
+    
+    <!-- Modal : Login -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 w-50 mx-auto">
+                          <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                          <input type="email" class="form-control" placeholder="Enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 w-50 mx-auto">
+                          <label for="exampleInputPassword1" class="form-label">Password:</label>
+                          <input type="password" class="form-control" placeholder="Enter your password" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check w-50 mx-auto">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <div class="w-50 mx-auto">
+                        <button type="submit" class="btn btn-dark w-100">Login</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <!-- Modal Register -->
+    <div class="modal fade" id="registerId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Register</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 w-50 mx-auto">
+                          <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                          <input type="email" class="form-control" placeholder="Enter your email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 w-50 mx-auto">
+                            <label for="exampleInputEmail1" class="form-label">Username:</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                        <div class="mb-3 w-50 mx-auto">
+                          <label for="exampleInputPassword1" class="form-label">Password:</label>
+                          <input type="password" class="form-control" placeholder="Enter your password" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check w-50 mx-auto">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <div class="w-50 mx-auto">
+                        <button type="submit" class="btn btn-dark w-100">Register</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- navbar end -->
+
+    <!-- header-start -->
+    <header>
+        
+    </header>
+    <!-- header-end -->
+
+    <!-- main-start -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xl-3 p-3 mx-4">
+                    <div class="card" style="width: 18rem;">
+                        <i style="font-size: 3rem;" class="fa-solid fa-address-card text-center p-2"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Address</h5>
+                          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto minima dignissimos voluptates, facere ad necessitatibus.</p>
+                          <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-3 p-3 mx-4">
+                    <div class="card" style="width: 18rem;">
+                        <i style="font-size: 3rem;" class="fa-solid fa-phone text-center p-2"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Contact</h5>
+                          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto minima dignissimos voluptates, facere ad necessitatibus.</p>
+                          <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-3 p-3 mx-4">
+                    <div class="card" style="width: 18rem;">
+                        <i style="font-size: 3rem;" class="fa-solid fa-laptop-code text-center p-2"></i>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Coding</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, consequatur? Distinctio assumenda excepturi ab voluptates!</p>
+                          <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main-end -->
+
+
+    
+
+    <!-- footer-start -->
+    <footer class="text-center text-lg-start">
+
+        <!-- footer-tab-1 start -->
+        <section id="section_footer_1" class="p-4 border-top d-flex justify-content-center justify-content-lg-between">
+            <div class="me-5 d-none d-lg-block">
+                <span>One pages</span>
+            </div>
+
+            <!-- social -->
+            <div id="social_id">
+                <a href="#!" class="me-1 btn btn-outline-primary text-reset btn-floating">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#!" class="me-1 btn btn-outline-warning text-reset btn-floating">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a href="#!" class="me-1 btn btn-outline-success text-reset btn-floating">
+                    <i class="fa-brands fa-telegram"></i>
+                </a> <a href="#!" class="me-1 btn btn-outline-info text-reset btn-floating">
+                    <i class="fa-brands fa-google"></i>
+                </a> <a href="#!" class="me-1 btn btn-outline-danger text-reset btn-floating">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <!-- footer-tab-1 end -->
+
+
+        <!-- footer-tab-2 start -->
+        <section id="section_footer_2">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-4">
+                    <!-- medium device:4 
+                    large device :3
+                    xlarge device :4 -->
+
+                    <!-- left-1 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-4">
+                            <i style="font-size:2rem; margin-right:.3rem;" class="fa-brands fa-avianex"></i> Company
+                            INC.
+                        </h6>
+                        <p style="text-align:left!important" class="line_clamp3">
+                            E-Ticaret Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam rerum ab
+                            explicabo temporibus tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sit molestiae et veritatis voluptates iure.
+                        </p>
+                    </div>
+
+                    <!-- left-2 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">FrontEnd</h6>
+                        <p><a href="" class="text-reset">Html5</a></p>
+                        <p><a href="" class="text-reset">CSS3</a></p>
+                        <p><a href="" class="text-reset">JS</a></p>
+                    </div>
+
+                    <!-- left-3 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow">
+                        <h6 class="text-uppercase mb-3">Backend</h6>
+                        <p><a href="" class="text-reset">Node JS</a></p>
+                        <p><a href="" class="text-reset">Java</a></p>
+                        <p><a href="" class="text-reset">C#</a></p>
+                    </div>
+
+                    <!-- left-4 -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5 shadow" id="address_id">
+                        <h6 class="text-uppercase mb-3">Contact</h6>
+                        <p><i class="fa-solid fa-earth-africa"></i> Turkey</p>
+                        <p><i class="fa-solid fa-envelope-open-text"></i>  
+                            <a href="mailto:hamitmizrak@gmail.com">hamitmizrak@gmail.com</a>
+                            </p>
+                        <p><i class="fa-solid fa-mobile-retro"></i>
+                            <a href="tel:90111223344">90 111 22 33 44</a>  </p>
+                            <p><i class="fa-solid fa-mobile-retro"></i>
+                                <a href="tel:90111223344">90 111 22 33 44</a>  </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-tab-2 end -->
+
+        <!-- CopyRight -->
+        <div class="text-center p-5 bg-dark" id="copy_right">
+            &copy; ©2022 Copyright;
+            <a href="https://www.hamitmizrak.com.tr" class="">Hamit Mızrak</a>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
